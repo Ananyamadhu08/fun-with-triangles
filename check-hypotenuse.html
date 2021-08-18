@@ -5,9 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Check Hypotenuse</title>
+
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <h1>Check Hypotenuse</h1>
+    <div class="verticle-middle">
+      <section>
+        <div class="backButtonContainer">
+          <i class="fas fa-cheveron-left"></i><a href="./index.html">Go Back</a>
+        </div>
+        <h1>Enter The Lenghts Of The Right Angle Triangle</h1>
+
+        <div class="triangle">
+          <label class="label sideA">a</label>
+          <label class="label sideB">b</label>
+          <label class="label sideC">c</label>
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+
+        <form class="form" id="formHyp">
+          <label class="label">
+            a=
+            <input
+              class="inputBox inputSide"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
+
+          <label class="label">
+            b=
+            <input
+              class="inputBox inputSide"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+          /></label>
+
+          <button class="button" type="submit" id="submitBtn">submit</button>
+        </form>
+
+        <h2>Hypotenuse will be calculated here-</h2>
+        <div class="outputHere">
+          <label class="label">C= </label>
+          <div style="display: inline" class="hypShowHere">
+            <span style="font-size: 1.8rem">√</span
+            ><span style="border-top: 2px solid black; padding-top: 0.6rem">
+              a<sup>2</sup>+b<sup>2</sup></span
+            >
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- footer -->
     <footer id="footer">
@@ -24,5 +89,20 @@
         </li>
       </ul>
     </footer>
+
+    <script>
+      const inputSides = document.querySelectorAll(".inputSide");
+      let lenghtA, lengthB;
+      const formHyp = document.querySelector("#formHyp");
+      const hypotenuse = document.querySelector(".hypShowHere");
+
+      formHyp.addEventListener("submit", (e) => {
+        e.preventDefault();
+        lenghtA = Number(inputSides[0].value);
+        lengthB = Number(inputSides[1].value);
+
+        hypotenuse.innerText = Math.sqrt(lenghtA * lenghtA + lengthB * lengthB);
+      });
+    </script>
   </body>
 </html>
