@@ -74,3 +74,122 @@ a:hover .cell {
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
 }
+
+/* -------------------------------- */
+
+.section {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+/* back button */
+
+.backButtonContainer {
+  margin: 2rem auto 0rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+
+  border-radius: 1.5rem;
+  background-color: white;
+}
+.backButtonContainer a {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+.backButtonContainer a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* input box */
+
+.inputBox {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  padding: 1rem;
+  margin: 1rem 1rem 1.5rem 0.2rem;
+  height: 20px;
+  width: 50px;
+  overflow: scroll;
+}
+.inputBox::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* submit button */
+
+.button {
+  display: block;
+  margin: 0 auto 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  border: 2px solid var(--primary-color);
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* output divs */
+
+.outputHere {
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: fit-content;
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+}
+.label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* quiz form and other display divs */
+
+.formulaSelectionForm {
+  text-align: left;
+}
+
+.areaCalBlock {
+  display: none;
+}
+
+.formQuiz {
+  text-align: left;
+}
+.formQuiz label.question {
+  display: block;
+}
+.radio input {
+  cursor: pointer;
+  padding: 0.5rem 0.5rem;
+  display: inline-block;
+}
+.radio {
+  padding: 0.5rem 1rem;
+  white-space: normal;
+}
+.radio label {
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  display: inline-block;
+}
+.ow {
+  background-color: var(--off-white);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.error {
+  display: none;
+}
