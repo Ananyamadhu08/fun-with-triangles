@@ -1,7 +1,13 @@
-:root {
+/* :root {
   --primary-color: #1e3a8a;
   --secondary-color: #3b82f6;
   --off-white: #60a5fa;
+} */
+
+:root {
+  --primary-color: #db2777;
+  --secondary-color: #801750c2;
+  --light-color: #a78bfa;
 }
 
 * {
@@ -11,13 +17,14 @@
 body {
   min-height: 100vh;
   margin: 0;
+  background-image: linear-gradient(#fce7f3, #db2777);
 }
 
 .verticle-middle {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 94vh;
+  min-height: 92vh;
   text-align: center;
 }
 
@@ -33,6 +40,7 @@ body {
   height: 100px;
   margin: 0.2rem 0.2rem 0.4rem;
   padding: 1rem;
+  border-radius: 2rem;
 
   text-align: center;
   display: flex;
@@ -42,7 +50,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  color: var(--primary-color);
+  color: black;
 }
 
 a {
@@ -57,8 +65,11 @@ a:hover .cell {
 
 #footer {
   width: 100%;
-  min-height: 6vh;
-  background-color: cornflowerblue;
+  height: 100%;
+  min-height: 8vh;
+  background-color: var(--secondary-color);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 .footer-list {
@@ -73,6 +84,7 @@ a:hover .cell {
   list-style: none;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
+  margin-top: 12px;
 }
 
 /* -------------------------------- */
@@ -186,10 +198,14 @@ a:hover .cell {
   display: inline-block;
 }
 .ow {
-  background-color: var(--off-white);
+  background-color: var(--light-color);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .error {
   display: none;
+}
+
+h1 {
+  padding: 2rem;
 }
