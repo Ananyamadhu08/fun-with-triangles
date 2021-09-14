@@ -5,9 +5,9 @@
 } */
 
 :root {
-  --primary-color: #db2777;
-  --secondary-color: #801750c2;
-  --light-color: #a78bfa;
+  --primary-color: #1d4ed8;
+  --secondary-color: #312e81;
+  --light-color: #7c3aed;
 }
 
 * {
@@ -17,7 +17,7 @@
 body {
   min-height: 100vh;
   margin: 0;
-  background-image: linear-gradient(#fce7f3, #db2777);
+  background-image: linear-gradient(#bfdbfe, #1d4ed8);
 }
 
 .verticle-middle {
@@ -50,7 +50,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  color: black;
+  color: white;
 }
 
 a {
@@ -60,7 +60,7 @@ a {
 
 a:hover .cell {
   background-color: var(--primary-color);
-  color: white;
+  color: black;
 }
 
 #footer {
