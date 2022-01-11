@@ -4,9 +4,7 @@ const outputDiv = document.querySelector("#is-triangle");
 
 let angles = [];
 
-formTriangle.addEventListener("submit", formTriangleHandler);
-
-const formTriangleHandler = e => {
+const formTriangleHandler = (e) => {
   e.preventDefault();
 
   //add the angles input
@@ -24,4 +22,6 @@ const formTriangleHandler = e => {
   } else {
     outputDiv.innerText = "Oopsss! these angles cannot make a triangle";
   }
-}
+};
+
+formTriangle.addEventListener("submit", formTriangleHandler);
